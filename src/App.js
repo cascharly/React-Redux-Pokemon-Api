@@ -2,10 +2,12 @@ import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle";
-import CantidadPokemon from "./components/CantidadPokemon";
-import CompraPokemon from "./components/CompraPokemon";
+// import CantidadPokemon from "./components/CantidadPokemon";
+// import CompraPokemon from "./components/CompraPokemon";
 import { Provider } from "react-redux";
 import store from "./redux/store";
+import CantidadPokemonHook from "./components/CantidadPokemonHook";
+import CompraPokemonHook from "./components/CompraPokemonHook";
 
 function App() {
   return (
@@ -25,9 +27,9 @@ function App() {
                 <div className="col-8">
                   <div className="card-body">
                     <div className="card-title h3 text-center">
-                      <CantidadPokemon />
+                      <CantidadPokemonHook />
                     </div>
-                    <CompraPokemon />
+                    <CompraPokemonHook />
                   </div>
                 </div>
               </div>
